@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Menu from "@/components/Menu";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,7 +23,17 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className=" flex gap-2 max-w-full bg-red-600">
+        <div className="w-[15%] h-screen  ">
+          <Menu/>
+        </div>
+
+        <div className="w-[70%] h-screen flex  justify-center">
+        {children}
+        </div>
+        
+        
+        </body>
     </html>
   );
 }
