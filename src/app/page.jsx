@@ -4,6 +4,7 @@ import { FaGlobe } from "react-icons/fa6";
 import { FaDatabase } from "react-icons/fa6";
 import { FaServer } from "react-icons/fa";
 import { useState } from "react";
+import Cards from "@/components/Cards";
 
 export default function Home() {
 
@@ -54,6 +55,12 @@ export default function Home() {
             <button className="w-[10%] h-full  bg-[#1a5b4b] rounded-md mx-3 text-[10px]">Submit</button>
           </div>
       </div>
+
+    <div className="flex gap-5">
+
+      <Cards/>
+      
+    </div>
     </main>
 
    
